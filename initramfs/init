@@ -4,11 +4,43 @@ mount -t proc none /proc
 mount -t sysfs none /sys
 mount -t devtmpfs none /dev
 
-echo ""
-echo "================================"
-echo "  Bienvenido a Aquaelix"
-echo "  Kernel $(uname -r)"
-echo "================================"
-echo ""
+hostname aquaelix
+export PS1='\h:\w # '
+
+# Colores (256 colores ANSI)
+R='\033[0m'
+SKY='\033[38;5;117m'
+BLUE='\033[38;5;39m'
+DEEP='\033[38;5;27m'
+WHITE='\033[1;38;5;231m'
+ORG='\033[38;5;208m'
+GRASS='\033[38;5;40m'
+LIME='\033[38;5;118m'
+YEL='\033[38;5;226m'
+
+printf "\n"
+printf "${SKY}     o        O              .          o       O${R}\n"
+printf "${WHITE}        .${R}        ${SKY}o${R}          ${WHITE}O${R}         ${SKY}.${R}        ${WHITE}o${R}\n"
+printf "${SKY}   O        .${R}       ${ORG}_______${R}          ${SKY}o${R}       ${WHITE}.${R}\n"
+printf "${WHITE}        o${R}        ${ORG}.-'${WHITE}|${ORG}  ${WHITE}|${ORG}  ${WHITE}|${ORG}'-.${R}\n"
+printf "${BLUE} ~ ~ ~ ${ORG}  .'${WHITE}|${ORG}   ${WHITE}|${ORG}   ${WHITE}|${ORG}   '.${R}     ${SKY}O${R}     ${BLUE}~ ~ ~${R}\n"
+printf "${BLUE}  ~ ${SKY}o${R}  ${ORG}  <  ${WHITE}|${ORG}  (@)${WHITE}|${ORG}      ${WHITE}|${ORG}   >=${R}\n"
+printf "${BLUE} ~ ~ ~ ${ORG}  '.${WHITE}|${ORG}   ${WHITE}|${ORG}   ${WHITE}|${ORG}   .'${R}   ${WHITE}.${R}      ${BLUE}~ ~ ~${R}\n"
+printf "${SKY}    .${R}        ${ORG}'-.${WHITE}|${ORG}__${WHITE}|${ORG}__${WHITE}|${ORG}.-'${R}      ${SKY}o${R}\n"
+printf "${WHITE}       O${R}       ${ORG}  '-----'${R}      ${WHITE}.${R}       ${SKY}O${R}\n"
+printf "${DEEP}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${R}\n"
+printf "${GRASS} Y y Y${LIME} y Y y${GRASS} Y Y y${LIME} Y y Y${GRASS} y Y y${LIME} Y y Y${GRASS} y Y y Y${R}\n"
+printf "${LIME}  y Y y${GRASS} Y y${YEL} *${LIME} y Y y${GRASS} Y y Y${YEL} *${LIME} y Y y${GRASS} Y y Y${R}\n"
+printf "\n"
+printf "${BLUE}      _    ___  _   _  _    _____ _     ___ __  __${R}\n"
+printf "${BLUE}     /_\\\\  / _ \\\\| | | |/_\\\\  | ____| |   |_ _|\\\\ \\\\/ /${R}\n"
+printf "${SKY}    / _ \\\\| (_) | |_| / _ \\\\ |  _| | |__  | |  >  < ${R}\n"
+printf "${SKY}   /_/ \\\\_\\\\\\\\__\\\\_\\\\\\\\___/_/ \\\\_\\\\|_____|____||___|/_/\\\\_\\\\${R}\n"
+printf "\n"
+printf "${WHITE}        ~~~  cielo  .  agua  .  cristal  ~~~${R}\n"
+printf "\n"
+printf "${BLUE}        CODED BY:  ${WHITE}JuanSilv19${R}\n"
+printf "${SKY}        Aquaelix${R} ${BLUE}-${R} ${WHITE}Kernel $(uname -r)${R}\n"
+printf "\n"
 
 exec /bin/sh
