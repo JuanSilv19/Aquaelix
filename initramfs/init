@@ -1,0 +1,14 @@
+#!/bin/sh
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t devtmpfs none /dev
+
+echo ""
+echo "================================"
+echo "  Bienvenido a Aquaelix"
+echo "  Kernel $(uname -r)"
+echo "================================"
+echo ""
+
+exec /bin/sh
