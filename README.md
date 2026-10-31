@@ -14,6 +14,14 @@ Proyecto de aprendizaje: compilar el kernel de Linux, armar un sistema mínimo c
 - [ ] Estética Frutiger Aero
 - [ ] ISO instalable
 
+## Así se ve
+
+![Aquaelix arrancando en QEMU](docs/aquaelix-boot.png)
+
+El sistema se llama **Aquaelix**. El nombre del equipo y del prompt es `glastinix`: `aqua@glastinix`.
+
+
+
 ## Estructura del repo
 
 | Carpeta | Contenido |
